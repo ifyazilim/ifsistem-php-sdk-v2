@@ -4,6 +4,7 @@ use SystemApi\Base\Service;
 use SystemApi\Site\ContactForms;
 use SystemApi\Site\Galleries;
 use SystemApi\Site\Headlines;
+use SystemApi\Site\News;
 use SystemApi\Site\Pages;
 use SystemApi\Site\Products;
 use SystemApi\Site\Settings;
@@ -45,4 +46,10 @@ class SiteService extends Service
      * @var Galleries
      */
     public $galleries;
+
+    /**
+     * @Inject
+     * @var News
+     */
+    public $news;
 }
