@@ -1,0 +1,21 @@
+{
+  "name": "ifyazilim/ifsistem-php-sdk-v2",
+  "description": "php ile ifsistem'i entegre yapmak için kullanılır.",
+  "require": {
+    "nesbot/carbon": "1.22.*",
+    "php-di/php-di": "5.4.*",
+    "symfony/var-dumper": "3.4.*",
+    "doctrine/annotations": "1.4.*",
+    "illuminate/support": "5.5.*",
+    "guzzlehttp/guzzle": "6.3.*"
+  },
+  "require-dev": {
+    "mockery/mockery": "1.0.*",
+    "phpunit/phpunit": "6.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "SystemApi\\": "src/SystemApi"
+    }
+  }
+}
