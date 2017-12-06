@@ -4,6 +4,7 @@ use SystemApi\Base\Service;
 use SystemApi\Site\ContactForms;
 use SystemApi\Site\Galleries;
 use SystemApi\Site\Headlines;
+use SystemApi\Site\Menus;
 use SystemApi\Site\News;
 use SystemApi\Site\Pages;
 use SystemApi\Site\Products;
@@ -52,4 +53,10 @@ class SiteService extends Service
      * @var News
      */
     public $news;
+
+    /**
+     * @Inject
+     * @var Menus
+     */
+    public $menus;
 }
