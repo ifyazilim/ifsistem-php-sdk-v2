@@ -55,7 +55,7 @@ class BackendService
      * @param array|null $body
      * @param UploadedFileInterface[]|null $files
      *
-     * @return object
+     * @return array|object
      *
      * @throws BadRequestException
      * @throws NotFoundException
