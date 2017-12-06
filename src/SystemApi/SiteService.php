@@ -8,6 +8,7 @@ use SystemApi\Site\Menus;
 use SystemApi\Site\News;
 use SystemApi\Site\Pages;
 use SystemApi\Site\Products;
+use SystemApi\Site\References;
 use SystemApi\Site\Settings;
 
 class SiteService extends Service
@@ -59,4 +60,10 @@ class SiteService extends Service
      * @var Menus
      */
     public $menus;
+
+    /**
+     * @Inject
+     * @var References
+     */
+    public $references;
 }
