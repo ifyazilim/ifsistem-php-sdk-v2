@@ -75,6 +75,17 @@ class ApiClient
         return $this;
     }
 
+    /**
+     * @param string $alias
+     * @return self
+     */
+    public function setAlias($alias)
+    {
+        $this->container->backend->alias = $alias;
+
+        return $this;
+    }
+
     public function __get($name)
     {
         return $this->container->get($name);
