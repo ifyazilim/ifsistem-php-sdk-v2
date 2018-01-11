@@ -28,9 +28,6 @@ class BackendService
     /** @var string */
     public $ip;
 
-    /** @var string */
-    public $alias;
-
     public function get($endpoint, $body = null)
     {
         return $this->sendApi('GET', $endpoint, $body);
@@ -72,7 +69,6 @@ class BackendService
             'headers'     => [
                 'X-Ip'      => $this->ip,
                 'X-Token'   => $this->token,
-                'X-Alias'   => $this->alias,
                 'X-Lang-Id' => $this->langId,
             ]
         ];
