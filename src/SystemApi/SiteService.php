@@ -10,6 +10,7 @@ use SystemApi\Site\Pages;
 use SystemApi\Site\Products;
 use SystemApi\Site\References;
 use SystemApi\Site\Settings;
+use SystemApi\Site\Testimonials;
 
 class SiteService extends Service
 {
@@ -66,4 +67,10 @@ class SiteService extends Service
      * @var References
      */
     public $references;
+
+    /**
+     * @Inject
+     * @var Testimonials
+     */
+    public $testimonials;
 }
