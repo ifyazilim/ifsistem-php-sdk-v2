@@ -67,7 +67,8 @@ class BackendService
         $options = [
             'http_errors' => false,
             'headers'     => [
-                'X-Ip'      => $this->ip,
+                'X-Forwarded-For' => $this->ip,
+
                 'X-Token'   => $this->token,
                 'X-Lang-Id' => $this->langId,
             ]
